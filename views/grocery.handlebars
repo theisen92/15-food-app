@@ -1,0 +1,34 @@
+<div class="container wrapper">
+    <div class="row">
+        <div class="col-lg-5">
+            <h5>1. first select a category <br>2. write a list for that category</h5>
+            <form>
+                <div class="form-group">
+                    <select class="form-control" id="grocery-cat">
+                        <option selected>choose a category...</option>
+                        <option value="bev">beverages</option>
+                        <option value="bread">bread/bakery</option>
+                        <option value="can">canned/jarred goods</option>
+                        <option value="dairy">dairy</option>
+                        <option value="dry">dry/baking goods</option>
+                        <option value="frozen">frozen foods</option>
+                        <option value="meat">meat</option>
+                        <option value="produce">produce</option>
+                        <option value="paper">paper goods</option>
+                        <option value="personal">personal care</option>
+                        <option value="other">other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="grocery-list">list for that catigory</label>
+                    <textarea class="form-control" id="grocery-list" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary justify-content-center add-to-list" id="add-to-list">add
+                    to list</button>
+            </form>
+        </div>
+        <div class="col-lg-7" id="grocery">
+            <h2>grocery list</h2>
+        </div>
+    </div>
+</div>

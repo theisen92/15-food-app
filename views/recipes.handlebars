@@ -1,0 +1,100 @@
+<div class="container wrapper">
+    <div class="row">
+
+        <!-- Add recipe form -->
+
+        <div class="col-lg-4 add-recipe">
+            <h2>add recipe</h2>
+            <form id="recipe">
+
+                <!-- Recipe author -->
+
+                <div class="form-group">
+                    <label for="author">recipe author</label>
+                    <input class="form-control" id="author" type="text" placeholder="your name">
+                </div>
+
+                <!-- Recipe name -->
+
+                <div class="form-group">
+                    <label for="name">recipe name</label>
+                    <input class="form-control" id="recipe-name" type="text" placeholder="eg. pizza">
+                </div>
+
+                <!-- Img URL -->
+                <div class="form-group">
+                    <label for="name">image</label>
+                    <input class="form-control" id="img-url" type="text" placeholder="image URL here...">
+                </div>
+
+
+                <!-- Ingredients -->
+
+                <div class="form-group">
+                    <label for="ingredients">ingredients</label>
+                    <textarea class="form-control" id="ingredients" rows="3"
+                        placeholder="eg. mozzarella, tomato, basil.."></textarea>
+                </div>
+
+                <!-- Steps for recipe -->
+
+                <div class="form-group">
+                    <label for="steps">steps for recipe</label>
+                    <textarea class="form-control" id="steps" rows="3"
+                        placeholder="eg. slice the tomato and mozzarella"></textarea>
+                </div>
+
+                <!-- Allergens check boxes -->
+
+                <label>does this recipe include any of the following?</label>
+                <div class="container allergens">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="dairy">
+                                <label class="form-check-label" for="dairy">dairy</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="eggs">
+                                <label class="form-check-label" for="eggs">eggs</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="nuts">
+                                <label class="form-check-label" for="nuts">nuts</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="wheat">
+                                <label class="form-check-label" for="wheat">wheat</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="soy">
+                                <label class="form-check-label" for="soy">soy</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="fish">
+                                <label class="form-check-label" for="fish">fish/shellfish</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add recipe button -->
+
+                <button type="submit" class="btn btn-primary add-button" id="add-button">add
+                    recipe</button>
+            </form>
+        </div>
+        <div class="col-lg-8" id="recipe-img">
+
+        </div>
+    </div>
+</div>
+
+{{!-- <form>
+  <div class="form-group">
+    <label for="exampleFormControlFile1">Example file input</label>
+    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+  </div>
+</form> --}}
