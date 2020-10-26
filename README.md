@@ -2,7 +2,7 @@
 
 ## Description
 
-Repository created to develop a site that utilizes a food recipe API, MYSQL, Handlebars, Node, Express, and Passport to show results of searches and save a meal plan based on the user that is logged in.
+Repository created to develop a site that utilizes MYSQL, Handlebars, Node, Express, and Passport to show results of searches and save a meal plan based on the user that is logged in.
 
 ## Live site:
 
@@ -12,7 +12,7 @@ See Git files
 
 ## Usage
 
-The usage of this is just for us to practice acessing APIs, MYSQL, Handlebars, Node, Express, Passport, HTML, Javascript, Bootstrap.
+The usage of this is just for us to practice MYSQL, Handlebars, Node, Express, Passport, HTML, Javascript, Bootstrap.
 
 ## Credits
 
