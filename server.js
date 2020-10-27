@@ -3,12 +3,25 @@ const app = express()
 const expbs = require("express-handlebars")
 var session = require('express-session')
 var passport = require('passport');
+const userCred = require("./config");
 
 
 // Sets up the Express App
 // =============================================================
 
 var PORT = process.env.PORT || 8080;
+
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL)
+} else {
+    connection = mysql.createConnection({
+        host: "localhost",
+        port: 3306,
+        user: userCred.user,
+        password: userCred.password,
+        database: "recipes",
+    });
+};
 
 var db = require("./models");
 
