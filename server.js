@@ -3,7 +3,8 @@ const app = express()
 const expbs = require("express-handlebars")
 var session = require('express-session')
 var passport = require('passport');
-const userCred = require("./config");
+const userCred = require("./config/config");
+const mysql = require("mysql");
 
 
 // Sets up the Express App
